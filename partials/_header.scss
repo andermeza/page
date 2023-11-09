@@ -1,0 +1,70 @@
+header {
+    width: 100%;
+}
+
+.header-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+i{
+    color: $white-normal;
+    
+}
+
+a{
+    color: $white-normal;
+    
+    
+    
+}
+
+.header-menu{
+    display: flex;
+    gap: 20px;
+}
+
+.header-menu a:hover{
+    
+         color: $red-light;
+
+    
+}
+
+.header-icons{
+    display: flex;
+    gap: 14px;
+    margin-right: 20px;
+}
+
+.header-icons a:hover{
+    i{
+        animation: translateY 0.9s infinite alternate;
+        color: $red-light;
+    }
+}
+
+
+@keyframes translateY {
+
+    from{
+        transform: translateY(0) scale(1);
+    }
+    to{
+        transform: translateY(-8px) scale(1.1);
+
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    .header-content{
+        width:  100%;
+        flex-direction: column;
+    }
+    .header-logo img{
+        width: 160px;
+       
+    }
+}
